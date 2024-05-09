@@ -1,0 +1,245 @@
+body {
+    background-color: #141414;
+    color: white;
+    opacity: 0.9;
+    overflow-x: hidden;
+}
+
+header .navbar .navbar-brand {
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+header .navbar .navbar-brand img {
+    width: 80px;
+}
+
+header .navbar a,
+header .navbar a:hover,
+header .navbar a:focus {
+    color: white;
+    opacity: 0.9;
+}
+
+header .navbar a:hover,
+header .navbar a:focus {
+    opacity: 1;
+}
+
+header .navbar a:focus {
+    font-weight: bold;
+}
+
+header .navbar-toggler {
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 2%;
+}
+
+header .navbar #user-controls {
+    align-items: center;
+}
+
+@media (max-width:991px) {
+    header .navbar #user-controls {
+        align-items: start;
+    }
+}
+
+header .navbar #user-controls .btn {
+    padding: 0;
+    padding-bottom: 1px;
+    color: white;
+}
+
+header .navbar #user-controls .btn i {
+    font-size: 1.5em;
+}
+
+#user-info .card-body {
+    background-color: #141414;
+    text-align: end;
+    padding: 0;
+    border: none;
+}
+
+@media (max-width:991px) {
+
+    #user-info .card-body,
+    #user-info .card-body ul {
+        text-align: start;
+        padding: 0;
+    }
+}
+
+#user-info .card-body ul {
+    list-style: none;
+}
+
+#user-info .card-body li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+    list-style: none;
+    font-size: 0.8em;
+}
+
+#user-info .card-body li a:hover {
+    color: red;
+}
+
+header .btn-group>.btn {
+    color: white;
+    opacity: 0.7;
+    padding: 3px 10px;
+    border: solid 1px white;
+    border-radius: 0%;
+}
+
+header .btn-group .btn:hover {
+    opacity: 1;
+}
+
+.nav-item .btn.dropdown-toggle {
+    border: 1px solid white;
+    border-radius: 0%;
+    background-color: black;
+    padding: 3px 6px;
+    font-size: 0.8em;
+}
+
+.nav-item .btn.dropdown-toggle:focus {
+    font-weight: normal;
+}
+
+#menu .card-body {
+    background-color: #141414;
+    border: none;
+}
+
+#menu .card-body ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0;
+}
+
+@media (max-width: 991px) {
+
+    #menu .card-body {
+        padding: 0;
+    }
+
+    #menu .card-body ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0;
+    }
+
+    #menu .card-body a:focus {
+        text-decoration: none;
+        color: red;
+        font-weight: 600;
+        opacity: 0.9;
+    }
+}
+
+#menu .card-body li {
+    list-style: none;
+}
+
+#menu .card-body a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+}
+
+#menu .card-body a:hover {
+    opacity: 1;
+    font-weight: 600;
+}
+
+main section .section-title {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+    font-weight: bold;
+}
+
+main section {
+    overflow-x: visible;
+        transition: opacity 0.4s ease-in-out; 
+}
+
+main section .movies {
+    display: flex;
+    overflow-x: scroll;
+}
+
+main section .movies::-webkit-scrollbar {
+    display: none;
+}
+
+main section .movies img {
+    width: 15%;
+    margin: 5px 12px 5px 5px;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+main section .movies img.enlarge {
+    transform: scale(1.08);
+}
+
+@media (max-width: 991px) {
+    main section .movies img  {
+        width: 48%;
+        scroll-snap-align: center;
+    }
+}
+
+footer .col-3,
+footer .col-6,
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+footer .row p,
+footer ul li {
+    padding: 5px 0;
+    opacity: 0.6;
+    font-size: 0.8em;
+}
+
+footer .row p a {
+    color: white;
+    opacity: 0.6;
+    font-size: 2em;
+    padding-right: 20px;
+}
+
+footer .row:last-of-type span {
+    border: solid 1px white;
+    padding: 5px 8px;
+}
+
+footer .row:last-of-type p:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
